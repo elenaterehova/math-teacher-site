@@ -1,26 +1,94 @@
+<!DOCTYPE html>
 {% load static %}
 <html>
     <head>
+        <meta charset="utf-8" />
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static '/img' %}">
     </head>
     <body>
-        <div class="page-header">
+        <header>
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
+            <p>Сайт репетитора по математике</p>
+          </header>
+          <main>
+            <article>
+                <section class="about">
+                    <div class="row">
+                        <div class="column"><img src="../../static/img/Портрет (1).png"></div>
+                        <div class="column"><h1>Здравствуйте!</h1>
+                            <h1>Меня зовут Виктория Алексеевна</h1>
+                            <p>Я занимаюсь репетиторством более 8 лет. 
+                                Готовлю к успешной сдаче ОГЭ и ЕГЭ по математике. Прививаю интерес к математике, 
+                                развиваю логическое мышление, расширяю и углубляю знания учащихся.</p>
+                            <p>Помогу закрыть пробелы в знаниях и подготовиться к экзаменам <a href=''>офлайн</a> или <a href=''>онлайн</a>.</p></div>
+                      </div>
+                      <p id="p1">Как мы учимся?</p>
+                      <div class="arrow-down">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section>
+               <section class="study">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a short card.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </section>
+              <section>
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
                 </div>
-            </div>
-        </div>
+              </section>
+              <section>
+                <h2>И третья</h2>
+                <p>Вы уже должны были начать догадываться.</p>
+              </section>
+            </article>
+          </main>
     </body>
 </html>
