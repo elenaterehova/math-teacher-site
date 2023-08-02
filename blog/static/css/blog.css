@@ -47,7 +47,7 @@ page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:
 }
 
 .about{
-    height: 1250px;
+    height: 1150px;
     background-color: black;
     padding-top: 150px;
     margin: 0;
@@ -70,7 +70,7 @@ page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:
     text-align: left;
 }
 .about img {
-    margin-left: 25%;
+    margin-left: 19%;
 }
 header{
     background-image: url(../img/picture.jpg);
@@ -138,13 +138,16 @@ header p {
     }
 }
 #p1 {
-    margin-left: 43.3%;
-    font-size: 30px;
+    text-align: center;
+    padding: 0%;
+    width: 100%;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 12%;
+    color: #0085FF;
 }
 .variant {
-    height: 1400px;
+    height: 1250px;
     background-image: url(../img/back3.jpg);
     background-size: cover;
     font-family: Noto Sans;
@@ -198,8 +201,9 @@ header p {
     text-align: center;
 }
 .photo{
-    height: 1000px;
-    background-color: black;
+    height: 1200px;
+    background-image: url(../img/back5.png);
+    background-size: contain;
 }
 .photo h1{
     font-size: 50px;
@@ -207,6 +211,70 @@ header p {
     font-family: Noto Sans;
     font-weight: bold;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     margin: 0;
+}
+.photo h2{
+    text-align: center;
+    line-height: normal;
+    padding: 2%;
+    margin-top: 5%;
+    color: white;
+}
+.price{
+    height: 1000px;
+    background-color: black;
+}
+.price h1 {
+    font-size: 50px;
+    color: #0085FF;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0%;
+}
+
+
+.photo p{
+    color: black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.photo .card{
+    background-color: white;
+    width: 280px;
+    height: 170px;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: #0085FF;
+}
+.photo .btn{
+    margin-left: 18%;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+.contact{
+    height: 395.3px;
+    background-color: black;
+
+}
+.contact img{
+    float: right;
+    width: 60%;
+}
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    color: #0085FF;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 100px;
+    margin: 0%;
+}
+.contact p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
