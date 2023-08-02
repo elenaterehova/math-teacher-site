@@ -8,7 +8,15 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link rel="stylesheet" href="{% static '/img' %}">
+        <script>
+          const myCarouselElement = document.querySelector('#myCarousel')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
+        </script>
+       
     </head>
     <body>
         <header>
@@ -36,46 +44,36 @@
                         <span></span>
                     </div>
                 </section>
-               <section class="study">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a short card.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+                <section class="variant">
+                  <h1>Обучение</h1>
+                  <h2>Вам нужен достойный результат? Я знаю, как его достичь!<br> Все мои ученики в 2020 году получили желаемые оценки в школе и ВУЗе.</h2>
+                  <div class="row">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../../static/img/pic1.png" width="300px" height="250px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Подготовка к ЕГЭ, ОГЭ и поступлению в ВУЗ</p>
+                      <a href="#" class="btn">Подробнее</a>
                     </div>
                   </div>
-               </section>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../../static/img/pic2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Работа со школьниками начальных классов</p>
+                      <a href="#" class="btn">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../../static/img/pic3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Работа со студентами, расширенный курс</p>
+                      <a href="#" class="btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                </section>
+                <section class="photo">
+                  <h1>Наши фото</h1>
+                </section>
               <section>
                 <div class="row">
                     <div class="col-md-8">
