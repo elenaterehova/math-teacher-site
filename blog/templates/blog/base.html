@@ -15,7 +15,19 @@
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
-            <p>Сайт репетитора по математике</p>
+            <p class="leftside">Сайт репетитора по математике</p>
+            <p class="rightside"><a href="#" class="btn">Оставить заявку</a></p>
+            
+            <ul>
+              <li><a href="#" id="main">Главная</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Стоимость обучения</a></li>
+              <li><a href="#">Доп.материалы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <h1>Обучение математике и информатике.<br>
+              Подготовка к ЕГЭ, ОГЭ, олимпиадам.</h1>
           </header>
           <main>
             <article>
@@ -58,20 +70,83 @@
                     <img src="../../static/img/pic3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Работа со студентами, расширенный курс</p>
-                      <a href="#" class="btn">Подробнее</a>
+                      <a href="#" class="btn">Записаться</a>
                     </div>
                   </div>
                 </div>
                 </section>
                 <section class="price">
                   <h1>Стоимость обучения</h1>
-
+                  <div class="row">
+               
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Подготовка к ЕГЭ по математике</p>
+                        <p class="card-text">1 индивидуальное занятие (60 мин.)</p>
+                        <h2>800 р.</h2>
+                        <a href="#" class="btn">Записаться</a>
+                      </div>
+                    </div>
+                
+                  
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Подготовка к ОГЭ по математике</p>
+                        <p class="card-text">1 индивидуальное занятие (60 мин.)</p>
+                        <h2>700 р.</h2>
+                        <a href="#" class="btn">Записаться</a>
+                      </div>
+                    </div>
+                  
+               
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Подготовка к ОГЭ по информатике</p>
+                        <p class="card-text">1 индивидуальное занятие (60 мин.)</p>
+                        <h2>600 р.</h2>
+                        <a href="#" class="btn">Записаться</a>
+                      </div>
+                    </div>
+                 
+                </div>
+                <div class="row">
+                  
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Школьная математика</p>
+                        <p class="card-text">1 индивидуальное занятие (60 мин.)</p>
+                        <h2>500 р.</h2>
+                        <a href="#" class="btn">Записаться</a>
+                      </div>
+                    </div>
+                
+                 
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Олимпиадная математика</p>
+                        <p class="card-text">1 индивидуальное занятие (60 мин.)</p>
+                        <h2>500 р.</h2>
+                        <a href="#" class="btn">Записаться</a>
+                      </div>
+                    </div>
+                
+                  
+                    <div class="card">
+                      <div class="card-body">
+                        <p>Школьная математика (1-4 класс)</p>
+                        <p class="card-text">1 индивидуальное занятие (60 мин.)</p>
+                        <h2>300 р</h2>
+                        <a href="#" class="btn">Записаться</a>
+                      </div>
+                    </div>
+               
+                </div>
                 </section>
                 <section class="photo">
                   <h1>Дополнительные материалы</h1>
                   <h2>Для детей и родителей</h2>
                   <div class="row">
-                    <div class="col-sm-3 mb-3 mb-sm-0">
+               
                       <div class="card">
                         <div class="card-body">
                           <p><img src="../../static/img/icon1.png"></p>
@@ -79,8 +154,8 @@
                           <a href="#" class="btn">Подробнее</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-3">
+                  
+                    
                       <div class="card">
                         <div class="card-body">
                           <p><img src="../../static/img/icon1.png"></p>
@@ -88,8 +163,8 @@
                           <a href="#" class="btn">Подробнее</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-3">
+                    
+                 
                       <div class="card">
                         <div class="card-body">
                           <p><img src="../../static/img/icon1.png"></p>
@@ -97,10 +172,10 @@
                           <a href="#" class="btn">Подробнее</a>
                         </div>
                       </div>
-                    </div>
+                   
                   </div>
                   <div class="row">
-                    <div class="col-sm-3 mb-3 mb-sm-0">
+                    
                       <div class="card">
                         <div class="card-body">
                           <p><img src="../../static/img/icon1.png"></p>
@@ -108,8 +183,8 @@
                           <a href="#" class="btn">Подробнее</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-3">
+                  
+                   
                       <div class="card">
                         <div class="card-body">
                           <p><img src="../../static/img/icon1.png"></p>
@@ -117,8 +192,8 @@
                           <a href="#" class="btn">Подробнее</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-3">
+                  
+                    
                       <div class="card">
                         <div class="card-body">
                           <p><img src="../../static/img/icon1.png"></p>
@@ -126,30 +201,59 @@
                           <a href="#" class="btn">Подробнее</a>
                         </div>
                       </div>
-                    </div>
+                 
                   </div>
                 </section>
                 <section class="contact">
-                  <img src="../../static/img/map.png">
+                  <div class="map1">
+                    <img src="../../static/img/map.png" id="map">
+                  </div>
+                  
                   <div>
                     <h1>Контакты</h1>
                     <p>г. Владимир, ул. Пушкина, д.15</p>
                     <p>+7(900)999-00-99</p>
+                    <ul>
+                    <li><a href="#"><img src="../../static/img/mail icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../static/img/vk icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../static/img/whatsapp icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../static/img//telegram icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../static/img/discord icon.png" alt=""></a></li>
+                  </ul>
                   </div>
                 </section>
-              <section>
-                <div class="row">
-                    <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                    </div>
-                </div>
-              </section>
-              <section>
-                <h2>И третья</h2>
-                <p>Вы уже должны были начать догадываться.</p>
-              </section>
             </article>
           </main>
+          <footer>
+            <section>
+              <div class="footer">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <p>Первое занятие ознакомительное. На нем мы с познакомимся с вами и вашим ребенком, разберем проблемы и составим план действий.</p>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Имя родителя</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Телефон родителя</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput2">
+                      </div>
+                      <button class="btn"><a href="#">Оставить заявку</a></button>
+                    </div>
+                  </div>     
+              </div>
+              <div class="footer-bottom">
+                <div class="container">
+
+                  <p class="leftstr">ⓒ И.И. Иванов, 2023</p>
+                  <p class="rightstr">Политика конфиденциальности.</p>
+
+                </div>
+              </div>
+            </section>
+          </footer>
     </body>
 </html>

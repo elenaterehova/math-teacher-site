@@ -1,7 +1,4 @@
-h1 a {
-    color: #FCA205;
-    font-family: Lobster;
-}
+
 
 body {
     margin: 0;
@@ -9,16 +6,48 @@ body {
     overflow-x: hidden;
     
 }
-page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+
+header .rightside {
+    float: right;
+    margin-top: 20px;
     text-align: center;
 }
-
-
-
-
+.rightside a{
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    border-color:#9dcfff;
+    border-width: 3px;
+    border-radius: 50px;
+    background-color: #0085FF;
+    width: 175px;
+    border-radius: 50px;
+}
+header h1{
+    color: white;
+    font-size: 33px;
+    text-align: center;
+    padding-top: 250px;
+    padding-left: 20px;
+}
+header ul{
+    display:table;
+    margin:auto;
+    padding-top: 20px;
+}
+header ul li {
+    display:table-cell;
+    width:20%;
+    text-align:center;
+    padding: 15px;
+    font-size: 18px;
+}
+header li a{
+    color: white;
+}
+#main {
+    color: #0085FF;
+}
 .date {
     color: black;
 }
@@ -82,12 +111,14 @@ header{
     padding: 0;
     width: 100%;
 }
-header p {
+.leftside {
     font-size: 25px;
     color: #ffffff;
     padding-top: 20px;
-    text-align: start;
+    float: left;
     padding-left: 20px;
+    width: 500px;
+    margin: 0;
 }
 .text {
     width: 500px;
@@ -190,7 +221,7 @@ header p {
     padding: 2%;
     margin-top: 5%;
 }
-.btn {
+.variant .btn {
     background-color: #0085FF;
     margin-top: 15%;
     width: 175px;
@@ -222,7 +253,7 @@ header p {
     color: white;
 }
 .price{
-    height: 1000px;
+    height: 1300px;
     background-color: black;
 }
 .price h1 {
@@ -241,6 +272,7 @@ header p {
     font-size: 15px;
     margin-top: 20px;
 }
+
 .photo .card{
     background-color: white;
     width: 280px;
@@ -248,20 +280,29 @@ header p {
     margin-top: 100px;
     border-style: solid;
     border-color: #0085FF;
+    margin: 70px;
 }
 .photo .btn{
     margin-left: 18%;
     margin-right: 15%;
     margin-top: 2%;
+    background-color: #0085FF;
+    width: 175px;
+    border-radius: 50px;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    text-align: center;
 }
 .contact{
-    height: 395.3px;
+    height: 500px;
     background-color: black;
 
 }
-.contact img{
+#map{
     float: right;
     width: 60%;
+    height: 500px;
 }
 .contact h1{
     text-align: center;
@@ -277,4 +318,133 @@ header p {
     font-size: 20px;
     text-align: center;
     margin-top: 50px;
+}
+.contact ul{
+    display:table;
+    margin:auto;
+   }
+   .contact ul li{
+    display:table-cell;
+    width:20%;
+    text-align:center;
+    padding: 15px;
+   }
+
+.footer {
+    height: 1000px;
+    background-image: url(../../static/img/footer-background-2.png);
+    background-size: cover;
+}
+.footer p {
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    text-align:left;
+
+}
+.footer .row {
+    width: 100%;
+}
+.footer .row .col {
+    width: 50%;
+}
+.footer .col {
+    height: 500px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.form-label{
+    color: white;
+    float: right;
+    padding-top: 80px;
+    font-size: 20px;
+    width: 360px;
+
+}
+.form-control {
+    background-color: rgb(78, 78, 78);
+    border-radius: 0;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: #0085FF;
+    width: 360px;
+    float: right;
+}
+.footer .btn{
+    border-radius: 0;
+    width: 360px;
+    height: 57px;
+    border-color:#9dcfff;
+    border-width: 3px;
+    text-align: center;
+    float: right;
+    background-color: #0085FF;
+    margin-top: 15%;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+}
+.footer .btn a {
+    color: white;
+    font-size: 20px;
+}
+.footer-bottom{
+    height: 100px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+  }
+.leftstr{
+    float: left;
+    margin-left: 30px;
+}
+.rightstr{
+    float: right;
+    margin-right: 30px;
+}
+.footer-bottom .container{
+    margin:0;
+    padding-left: 20px;
+    width: 100%;
+}
+.footer .row .col p{
+    font-size: 25px;
+    margin-top: 120px;
+}
+.price .card{
+    background-color: white;
+    width: 280px;
+    height: 410px;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: #0085FF;
+    margin: 70px;
+    padding-top: 60px;
+}
+.price .btn{
+    margin-left: 18%;
+    margin-right: 15%;
+    margin-top: 20px;
+    background-color: #0085FF;
+    width: 175px;
+    border-radius: 50px;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    text-align: center;
+}
+.price p{
+    color: black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+.price h2{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.price .card-text{
+    font-size: 15px;
 }
