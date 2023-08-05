@@ -1,0 +1,450 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+header .rightside {
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+}
+.rightside a{
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    border-color:#9dcfff;
+    border-width: 3px;
+    border-radius: 50px;
+    background-color: #0085FF;
+    width: 175px;
+    border-radius: 50px;
+}
+header h1{
+    color: white;
+    font-size: 33px;
+    text-align: center;
+    padding-top: 250px;
+    padding-left: 20px;
+}
+header ul{
+    display:table;
+    margin:auto;
+    padding-top: 20px;
+}
+header ul li {
+    display:table-cell;
+    width:20%;
+    text-align:center;
+    padding: 15px;
+    font-size: 18px;
+}
+header li a{
+    color: white;
+}
+#main {
+    color: #0085FF;
+}
+.date {
+    color: black;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: black;
+    text-align: center;
+}
+
+.about{
+    height: 1150px;
+    background-color: black;
+    padding-top: 150px;
+    margin: 0;
+}
+.about h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Noto Sans;
+    text-align: center;
+    padding-top: 50px;
+    text-align: left;
+}
+.about p{
+    color: white;
+    font-size: 25px;
+    font-family: Noto Sans;
+    text-align: center;
+    padding-top: 50px;
+    width: 600px;
+    text-align: left;
+}
+.about img {
+    margin-left: 19%;
+}
+header{
+    background-image: url(../img/picture.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    height: 900px;
+    display: block;
+    padding: 0;
+    width: 100%;
+}
+.leftside {
+    font-size: 25px;
+    color: #ffffff;
+    padding-top: 20px;
+    float: left;
+    padding-left: 20px;
+    width: 500px;
+    margin: 0;
+}
+.text {
+    width: 500px;
+    text-align:center;
+}
+
+.column {
+    float:left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.arrow-down {
+    margin-left: 50%;
+    margin-top: 3%;
+}
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -19px;
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+#p1 {
+    text-align: center;
+    padding: 0%;
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 12%;
+    color: #0085FF;
+}
+.variant {
+    height: 1250px;
+    background-image: url(../img/back3.jpg);
+    background-size: cover;
+    font-family: Noto Sans;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 7%;
+
+}
+.variant h1{
+    font-size: 50px;
+    color: #0085FF;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0;
+}
+.card p{
+    color: white;
+}
+.card-text {
+    color: white;
+    margin-top: 15%;
+    font-family: Noto Sans;
+    font-size: 18px;
+
+}
+.variant h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.variant h2{
+    text-align: center;
+    line-height: normal;
+    padding: 2%;
+    margin-top: 5%;
+}
+.variant .btn {
+    background-color: #0085FF;
+    margin-top: 15%;
+    width: 175px;
+    border-radius: 50px;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    text-align: center;
+}
+.photo{
+    height: 1200px;
+    background-image: url(../img/back5.png);
+    background-size: contain;
+}
+.photo h1{
+    font-size: 50px;
+    color: #0085FF;
+    font-family: Noto Sans;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0;
+}
+.photo h2{
+    text-align: center;
+    line-height: normal;
+    padding: 2%;
+    margin-top: 5%;
+    color: white;
+}
+.price{
+    height: 1300px;
+    background-color: black;
+}
+.price h1 {
+    font-size: 50px;
+    color: #0085FF;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0%;
+}
+
+
+.photo p{
+    color: black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.photo .card{
+    background-color: white;
+    width: 280px;
+    height: 170px;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: #0085FF;
+    margin: 70px;
+}
+.photo .btn{
+    margin-left: 18%;
+    margin-right: 15%;
+    margin-top: 2%;
+    background-color: #0085FF;
+    width: 175px;
+    border-radius: 50px;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    text-align: center;
+}
+.contact{
+    height: 500px;
+    background-color: black;
+
+}
+#map{
+    float: right;
+    width: 60%;
+    height: 500px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    color: #0085FF;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 100px;
+    margin: 0%;
+}
+.contact p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.contact ul{
+    display:table;
+    margin:auto;
+   }
+   .contact ul li{
+    display:table-cell;
+    width:20%;
+    text-align:center;
+    padding: 15px;
+   }
+
+.footer {
+    height: 1000px;
+    background-image: url(../../static/img/footer-background-2.png);
+    background-size: cover;
+}
+.footer p {
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    text-align:left;
+
+}
+.footer .row {
+    width: 100%;
+}
+.footer .row .col {
+    width: 50%;
+}
+.footer .col {
+    height: 500px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.form-label{
+    color: white;
+    float: right;
+    padding-top: 80px;
+    font-size: 20px;
+    width: 360px;
+
+}
+.form-control {
+    background-color: rgb(78, 78, 78);
+    border-radius: 0;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: #0085FF;
+    width: 360px;
+    float: right;
+}
+.footer .btn{
+    border-radius: 0;
+    width: 360px;
+    height: 57px;
+    border-color:#9dcfff;
+    border-width: 3px;
+    text-align: center;
+    float: right;
+    background-color: #0085FF;
+    margin-top: 15%;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+}
+.footer .btn a {
+    color: white;
+    font-size: 20px;
+}
+.footer-bottom{
+    height: 100px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+  }
+.leftstr{
+    float: left;
+    margin-left: 30px;
+}
+.rightstr{
+    float: right;
+    margin-right: 30px;
+}
+.footer-bottom .container{
+    margin:0;
+    padding-left: 20px;
+    width: 100%;
+}
+.footer .row .col p{
+    font-size: 25px;
+    margin-top: 120px;
+}
+.price .card{
+    background-color: white;
+    width: 280px;
+    height: 410px;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: #0085FF;
+    margin: 70px;
+    padding-top: 60px;
+}
+.price .btn{
+    margin-left: 18%;
+    margin-right: 15%;
+    margin-top: 20px;
+    background-color: #0085FF;
+    width: 175px;
+    border-radius: 50px;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    text-align: center;
+}
+.price p{
+    color: black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+.price h2{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.price .card-text{
+    font-size: 15px;
+}

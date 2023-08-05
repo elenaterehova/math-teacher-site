@@ -1,15 +1,26 @@
 from django.shortcuts import render
+from django.views import View
+
 from .models import Post
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 from .models import SocialMedia
+from django.http import HttpResponse
 
+
+class MyView(View):
+
+    def get(self, request, pk):
+        return HttpResponse('Hello, World!')
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def post_number(request, my_pk):
+    post = get_object_or_404(Post,pk=my_pk)
+    return render(request, 'blog/post_list.html', {'post': post})
 def post_detail(request,pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
@@ -43,5 +54,6 @@ def post_edit(request, pk):
 
 def socialmedia_link(request, pk):
     link = get_object_or_404(SocialMedia, pk)
-    return redirect('http://telegram.org', pk=link.pk)
-
+    return redirect(request, 'blog/base.html', pk=link.pk)
+def index(request):
+    return HttpResponse("Страница приложения")
