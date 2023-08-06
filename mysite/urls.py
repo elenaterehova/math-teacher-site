@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from contact_form.views import ContactForm, success, ContactCreate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    path('contact/', ContactCreate.as_view(), name='contact_page'),
+    path('success/', success, name='success_page'),
 ]
