@@ -9,11 +9,25 @@ from django.shortcuts import redirect
 from .models import SocialMedia
 from django.http import HttpResponse
 
+def index(request):
+    return HttpResponse('')
+def post_study(request):
+    return render(request, 'blog/post_study.html')
 
-class MyView(View):
+def telegram(request):
+    return redirect("https://web.telegram.org/k/")
+def vk(request):
+    return redirect("https://vk.com/")
 
-    def get(self, request, pk):
-        return HttpResponse('Hello, World!')
+def whatsapp(request):
+    return redirect('https://www.whatsapp.com/?lang=ru_RU')
+
+def discord(request):
+    return redirect('https://discord.com/')
+
+def mail(request):
+    return redirect('https://mail.ru/')
+
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
@@ -55,5 +69,4 @@ def post_edit(request, pk):
 def socialmedia_link(request, pk):
     link = get_object_or_404(SocialMedia, pk)
     return redirect(request, 'blog/base.html', pk=link.pk)
-def index(request):
-    return HttpResponse("Страница приложения")
+

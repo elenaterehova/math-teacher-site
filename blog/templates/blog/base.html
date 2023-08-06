@@ -1,7 +1,7 @@
 {% load static %}
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Репетитор Виктория Алексеевна</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -17,10 +17,10 @@
             
             <ul>
               <li><a href="{% url 'index' %}" target="_blank" id="main">Главная</a></li>
-              <li><a href="#">Обучение</a></li>
-              <li><a href="#">Стоимость обучения</a></li>
-              <li><a href="#">Доп.материалы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="{% url 'study' %}">Обучение</a></li>
+              <li><a href="#cost">Стоимость обучения</a></li>
+              <li><a href="#materials">Доп.материалы</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ul>
 
             <h1>Обучение математике и информатике.<br>

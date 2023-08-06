@@ -1,0 +1,56 @@
+.variant {
+    height: 1250px;
+    background-image: url(../img/back3.jpg);
+    background-size: cover;
+    font-family: Noto Sans;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 7%;
+
+}
+.variant h1{
+    font-size: 50px;
+    color: #0085FF;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0;
+}
+.card p{
+    color: white;
+}
+.card-text {
+    color: white;
+    margin-top: 15%;
+    font-family: Noto Sans;
+    font-size: 18px;
+
+}
+.variant h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.variant h2{
+    text-align: center;
+    line-height: normal;
+    padding: 2%;
+    margin-top: 5%;
+}
+.variant .btn {
+    background-color: #0085FF;
+    margin-top: 15%;
+    width: 175px;
+    border-radius: 50px;
+    color: white;
+    font-family: Noto Sans;
+    font-size: 15px;
+    text-align: center;
+    height: 200px;
+}
